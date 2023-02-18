@@ -83,7 +83,7 @@ class YouTubeAudioDownloader:
         or in case of unexpected exception, the service directory of
         the audio should be deleted to free up the space on the hard drive.
         """
-        # shutil.rmtree(self._audio_directory_path)
+        shutil.rmtree(self._audio_directory_path)
 
     def _split_into_chunks(self, content_length: int) -> ChunkRanges:
         """
