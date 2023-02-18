@@ -1,0 +1,2 @@
+class FileTooLargeForUploading(Exception):
+    pass
